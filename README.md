@@ -25,7 +25,7 @@ Add Authorized redirect URIs to your google credentials. URI Format `https://{UR
 
 
 ### Other OAuth External Logins
-In theory this workflow should allow the use of any of the oauth providers found [Here]("https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/google-logins?view=aspnetcore-6.0") which include Google, Microsoft, Facebook &amp; Twitter.
+In theory this workflow should allow the use of any of the oauth providers found [Here](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/google-logins?view=aspnetcore-6.0) which include Google, Microsoft, Facebook &amp; Twitter.
 
 The `ExternalLogin` page callback method would need to have the relevant routes added
 
