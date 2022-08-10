@@ -36,3 +36,23 @@ public async Task<IActionResult> OnGetCallbackAsync(string returnUrl = null, str
     // Code removed
 }
 ```
+
+You would also need to register the relevant services. For Example adding the microsoft service would look like this
+
+```c#
+public static PiranhaServiceBuilder UseGangsterGeekAuthSystem(this PiranhaServiceBuilder serviceBuilder, IConfiguration configuration)
+{
+    serviceBuilder.Services.AddAuthentication().AddGoogle(googleOptions =>
+    {
+        googleOptions.ClientId = configuration["Google:ClientId"];
+        googleOptions.ClientSecret = configuration["Google:ClientSecret"];
+    })
+    .AddMicrosoftAccount(microsoftOptions =>
+    {
+        microsoftOptions.ClientId = configuration["Authentication:Microsoft:ClientId"];
+        microsoftOptions.ClientSecret = configuration["Authentication:Microsoft:ClientSecret"];
+    });
+
+    return serviceBuilder;
+}
+```
