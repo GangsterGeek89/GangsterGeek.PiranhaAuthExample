@@ -15,7 +15,7 @@ Set your google client Id and secret in `appsettings.json`
 }
 ```
 
-Add Authorized redirect URIs to your google credentials
+Add Authorized redirect URIs to your google credentials. URI Format `https://{URL}/signin-google`
 
 ![Google Credentials Redirect Uri](/images/RedirectUri.png) 
 
