@@ -1,9 +1,9 @@
 # Gangster Geek Example Local &amp; External Auth For Piranha CMS
 This project implements Asp.Net default identity login procedure modified to work with piranha
 ## Things to note!
--Manager Logout link still uses the default piranha route. Although this does still seem to logout the user even when logged in with an external google account.
--This is just an example implementation and comes with no warranties or guarantees
--The delete user link in the manager seems to have a problem deleting accounts made with external login.
+1. Manager Logout link still uses the default piranha route. Although this does still seem to logout the user even when logged in with an external google account.
+2. This is just an example implementation and comes with no warranties or guarantees
+3. The delete user link in the manager seems to have a problem deleting accounts made with external login.
 
 ## Run the demo
 Set your google client Id and secret in `appsettings.json`
@@ -19,9 +19,9 @@ Add Authorized redirect URIs to your google credentials. URI Format `https://{UR
 
 ![Google Credentials Redirect Uri](/images/RedirectUri.png) 
 
--Run Project
--Seed Data
-- Navigate to `/Login`
+1. Run Project
+2. Seed Data
+3. Navigate to `/Login`
 
 
 ### Other OAuth External Logins
