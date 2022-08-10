@@ -17,7 +17,7 @@ Set your google client Id and secret in `appsettings.json`
 
 Add Authorized redirect URIs to your google credentials
 
-| ![config](/images/RedirectUri.PNG) 
+![Google Credentials Redirect Uri](/images/RedirectUri.PNG) 
 
 -Run Project
 -Seed Data
